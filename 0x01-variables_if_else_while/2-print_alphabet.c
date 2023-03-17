@@ -1,37 +1,19 @@
 #include <stdio.h>
 /**
- * main - print numbers from 00 to 99.
+ * main - prints the alphabet in lowercase.
 (*
  * Return: 0 on success
  */
 int main(void)
 {
-	int i = '0';
-	int j = '0';
+	char c = 'a';
 
-	while (i <= '9')
+	while (c <= 'z')
 	{
-		while (j <= '9')
-		{
-			if (!(i > j || i == j))
-			{
-				putchar(i);
-				putchar(j);
-				if (i == '8' && j == '9')
-				{
-					putchar('\n');
-				}
-				else
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
-			j++;
-		}
-		j = '0';
-		i++;
+		putchar(c);
+		c++;
 	}
+	putchar('\n');
 	return (0);
 }
 
