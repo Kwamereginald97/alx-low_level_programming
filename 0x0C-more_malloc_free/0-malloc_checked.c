@@ -7,7 +7,7 @@
  * @b: Size of memory block to be allocated
  *
  * Return: Pointer to the allocated memory
- * If malloc fails, the function causes normal process termination with a status value of 98
+ * If malloc fails, the function causes normal process termination
  */
 void *malloc_checked(unsigned int b)
 {
